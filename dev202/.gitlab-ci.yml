@@ -1,0 +1,22 @@
+stages: #etape
+  - build
+  - test
+  - deploy 
+
+build-job: #tache
+  stage: build
+  script:
+    echo "build job ..."
+    echo "build job end !"
+
+test-job:
+  stage: test
+  script:
+    echo "test job ...."
+    echo "test job end !"
+
+deploy-job:
+  stage: deploy
+  script:
+    echo "deploy job ...."
+    echo "deploy job end !"
